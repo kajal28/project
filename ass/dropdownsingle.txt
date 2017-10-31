@@ -1,0 +1,67 @@
+package ActiTime;
+
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.ui.Select;
+
+public class DropdownSingle {
+
+	public static void main(String[] args) throws InterruptedException 
+	{
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Pranali Patil\\Desktop\\geckodriver.exe");
+		 WebDriver d=new FirefoxDriver();
+		 
+		 d.get("file:///C:/Users/Pranali%20Patil/Desktop/Dropdown.html");
+		 
+		 WebElement e= d.findElement(By.id("abc"));
+		 Select s=new Select(e);
+		 Thread.sleep(1000);
+		
+		 List<WebElement> list = s.getOptions();
+		 
+		 HashSet<String> h=new HashSet();
+		 
+		 ArrayList<String> a=new ArrayList();
+		 
+		 for(WebElement e1:list)
+		 {
+			
+			 String s1=e1.getText();
+			 a.add(s1);
+			 h.add(s1);
+			 
+		 }
+		 for(String s2:h)
+		 {
+			 
+			int count=0;
+				for(String s3:a)
+				{
+				 if(s2.equals(s3))
+				 {
+					 count++;
+				 }
+					 
+				}
+			
+			if(count==1)
+			{
+				s.selectByVisibleText(s2);
+				//System.out.println(s2);
+			}
+			
+			}
+			
+		 
+		 
+		 }
+	}
+
+		 
+	

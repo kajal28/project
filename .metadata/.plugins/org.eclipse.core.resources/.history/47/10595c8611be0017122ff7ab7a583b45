@@ -1,0 +1,38 @@
+package script;
+
+import java.io.IOException;
+
+import org.apache.poi.EncryptedDocumentException;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.testng.annotations.Test;
+
+import generic.BasePage;
+import generic.BaseTest;
+import generic.Excel;
+import pom.LogIn;
+
+public class TestScript extends BaseTest
+{
+	public LogIn l;
+	@Test
+	public void invalidlogin() throws EncryptedDocumentException, InvalidFormatException, IOException
+	{
+		 l= new LogIn(driver);
+		l.uername().sendKeys(Excel.readData("Sheet1", 1, 1));
+		l.password().sendKeys(Excel.readData("Sheet1", 1, 2));
+		l.login().click();
+		BasePage.eleverification(l.errorMsg());
+	}
+	
+	@Test
+	public void validLogin() throws EncryptedDocumentException, InvalidFormatException, IOException, InterruptedException
+	{
+		l= new LogIn(driver);
+		l.uername().sendKeys(Excel.readData("Sheet1", 2, 1));
+		l.password().sendKeys(Excel.readData("Sheet1", 2, 2));
+		l.login().click();
+		Thread.sleep(2000);
+		BasePage.pageverification(driver.getTitle(), "actiTIME-Enter Time-Track");
+		l.logoutlink().click();
+	}
+}

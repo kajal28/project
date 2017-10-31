@@ -1,0 +1,43 @@
+package program1;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class Hiddenpopup {
+
+	public static void main(String[] args) throws InterruptedException
+	{
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Dell\\Desktop\\geckodriver.exe");
+		WebDriver d = new FirefoxDriver();
+		
+		d.get("https://www.cleartrip.com/");
+		Thread.sleep(1000);
+		
+		d.findElement(By.id("DepartDate")).click();
+		Thread.sleep(1000);
+		
+		Date date= new Date();
+		SimpleDateFormat s1=new SimpleDateFormat("dd");
+		SimpleDateFormat s2=new SimpleDateFormat("mmmm");
+		SimpleDateFormat s3=new SimpleDateFormat("yyyy");
+		
+		String str1=s1.format(date);
+		String str2=s2.format(date);
+		String str3=s3.format(date);
+		 
+		System.out.println(s1);
+		System.out.println(s2);
+		System.out.println(s3);
+		
+				
+		d.findElement(By.xpath("//span[.='str2']/../../..//a[.='str1']")).click();
+		
+		
+
+	}
+
+}

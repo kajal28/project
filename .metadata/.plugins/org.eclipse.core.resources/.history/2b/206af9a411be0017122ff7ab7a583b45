@@ -1,0 +1,51 @@
+package generic;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
+
+public class BasePage 
+{
+	public static WebDriver driver;
+	
+	public BasePage(WebDriver driver) 
+	{
+		this.driver=driver;
+	}
+	
+	public static void pageverification(String eTitle , String aTitle)
+	{
+		try
+		{
+			WebDriverWait wait = new WebDriverWait(driver, 10);
+			wait.until(ExpectedConditions.titleIs(eTitle));
+			if(eTitle.equals(aTitle))
+			{
+				Reporter.log("Title is Matching: Pass" , true);
+			}
+		}
+		catch (Exception e) 
+		{
+			Reporter.log("Title is not matching: Fail" , true);
+		}
+	}
+	
+	public static void eleverification(WebElement expText , String actText)
+	{
+		try
+		{
+			WebDriverWait wait = new WebDriverWait(driver, 10);
+			wait.until(ExpectedConditions.visibilityOf(expText));
+			if((expText.getText()).equals(actText))
+			{
+				Reporter.log("Error message is displayed: Pass" , true);
+			}
+		}
+		catch (Exception e) 
+		{
+			Reporter.log("Error message is not displayed: Fail" , true);
+		}
+	}
+}

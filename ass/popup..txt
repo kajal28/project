@@ -1,0 +1,30 @@
+package program1;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class popups {
+
+	public static void main(String[] args) throws InterruptedException 
+	{
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Dell\\Desktop\\geckodriver.exe");
+		WebDriver d = new FirefoxDriver();
+		d.get("https://www.irctc.co.in/eticketing/loginHome.jsf");
+		Thread.sleep(3000);
+		
+		d.findElement(By.id("loginbutton")).click();
+		Thread.sleep(1000);
+		
+	Alert act = d.switchTo().alert();
+	Thread.sleep(1000);
+	System.out.println(act.getText());
+	Thread.sleep(1000);
+	act.accept();
+	 
+	
+
+	}
+
+}

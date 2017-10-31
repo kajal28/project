@@ -1,0 +1,42 @@
+package ActiTime;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class CheckBox1 
+{
+
+	public static void main(String[] args)
+	{
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\Pranali Patil\\Desktop\\chromedriver.exe");
+		 WebDriver d=new ChromeDriver();
+		 
+		 d.get("file:///C:/Users/Pranali%20Patil/Desktop/check.html");
+		 WebElement e=d.findElement(By.xpath("//input"));
+		 
+		 List<WebElement>list=d.findElements(By.xpath("//input"));
+		 ArrayList<WebElement> a=new ArrayList<>();
+		 
+		 for(WebElement w:list)
+		 {
+			 a.add(w);
+			 
+		 }
+		 
+		 for(int i=0;i<=a.size();i++)
+		 {
+			 if(i%2!=0)
+			 {
+				 d.findElement(By.xpath("//input["+i+"]")).click();
+				 
+			 }
+		 }
+
+	}
+
+}

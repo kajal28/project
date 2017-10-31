@@ -1,0 +1,46 @@
+package program1;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+
+public class Craftvilla {
+
+	public static void main(String[] args) throws InterruptedException
+	{
+
+		System.setProperty("webdriver.gecko.driver", "C:\\Users\\Dell\\Desktop\\geckodriver.exe");
+		WebDriver d = new FirefoxDriver();
+		
+		d.get("http://www.craftsvilla.com/");
+		d.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+		Thread.sleep(3000);
+		
+		d.findElement(By.xpath("//span[.='Sign In']")).click();
+		Thread.sleep(1000);
+		
+		d.findElement(By.xpath("//label[@for='emailId']")).sendKeys("shivjaykolwankar92@gmail.com");
+		Thread.sleep(1000);
+		
+		d.findElement(By.xpath("//div[.='CONTINUE']")).click();
+		Thread.sleep(3000);
+		
+		 WebElement e = d.findElement(By.xpath("//input[@id='userPassword']"));
+		 e.click();
+		 e.sendKeys("Shivmasatar");
+		Thread.sleep(1000);
+		
+		d.findElement(By.xpath("//div[.='Login']")).click();
+		Thread.sleep(3000);
+		
+		Actions a = new Actions(d);
+		 WebElement e1 = d.findElement(By.xpath("//span[.='shivjaykolwankar92@gmail.com']/.."));
+		 Thread.sleep(3000);
+		 a.moveToElement(e1).perform();  
+	}
+
+}

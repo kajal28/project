@@ -1,0 +1,47 @@
+package ActiTime;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
+
+public class Flipcart {
+
+	public static void main(String[] args) throws InterruptedException 
+	{
+		
+			System.setProperty("webdriver.chrome.driver","C:\\Users\\Pranali Patil\\Desktop\\chromedriver.exe");
+			 WebDriver d=new ChromeDriver();
+			 d.get("https://www.flipkart.com");
+			 Thread.sleep(2000);
+			 
+			 d.findElement(By.xpath("//a[.='Log In']")).click();
+			 Thread.sleep(2000);
+			 
+			 d.findElement(By.className("_2zrpKA")).sendKeys("9757486316");
+			 Thread.sleep(1000);
+			 
+			 d.findElement(By.xpath("//input[@class='_2zrpKA _3v41xv']")).sendKeys("Shivmasatar");
+			 Thread.sleep(1000);
+			 
+			 
+			 d.findElement(By.xpath("//button[@class='_2AkmmA _1LctnI _7UHT_c']")).click();
+			 Thread.sleep(1000);
+			 
+			Actions a=new Actions(d);
+			 a.moveToElement(d.findElement(By.xpath("//a[.='My Account']"))).perform();
+			 Thread.sleep(1000);
+			
+			 d.findElement(By.xpath("//a[.='Log Out']")).click();
+			 
+			
+			 
+			
+			 
+		
+	}
+
+}

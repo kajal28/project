@@ -1,0 +1,8 @@
+package generic;
+
+public interface AutoConst 
+{
+	String GECKO_KEY = "webdriver.gecko.driver";
+	String GECKO_VALU = "C:\\Users\\admin\\Desktop\\geckodriver.exe";
+	String PATH = "C:\\Users\\admin\\Desktop\\sahabaz\\selenium\\Automation\\testData.xls";
+}
