@@ -1,0 +1,15 @@
+package mavenprog;
+
+import org.testng.annotations.Test;
+
+public class program1 
+{
+	@Test
+	public void m1()
+	{
+		
+	}
+	
+	
+	
+}

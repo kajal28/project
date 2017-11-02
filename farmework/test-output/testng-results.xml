@@ -2,41 +2,41 @@
 <testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="52986" started-at="2017-10-31T08:51:05Z" finished-at="2017-10-31T08:51:58Z">
+  <suite name="Default suite" duration-ms="70722" started-at="2017-11-01T06:31:30Z" finished-at="2017-11-01T06:32:41Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="52986" started-at="2017-10-31T08:51:05Z" finished-at="2017-10-31T08:51:58Z">
+    <test name="Default test" duration-ms="70722" started-at="2017-11-01T06:31:30Z" finished-at="2017-11-01T06:32:41Z">
       <class name="script.TestScript">
-        <test-method status="PASS" signature="preCondition()[pri:0, instance:script.TestScript@167c1fc]" name="preCondition" is-config="true" duration-ms="14467" started-at="2017-10-31T14:21:05Z" finished-at="2017-10-31T14:21:20Z">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:script.TestScript@c285f4]" name="preCondition" is-config="true" duration-ms="24216" started-at="2017-11-01T12:01:30Z" finished-at="2017-11-01T12:01:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="FAIL" signature="invalidlogin()[pri:0, instance:script.TestScript@167c1fc]" name="invalidlogin" duration-ms="10360" started-at="2017-10-31T14:21:20Z" finished-at="2017-10-31T14:21:30Z">
+        <test-method status="FAIL" signature="invalidlogin()[pri:0, instance:script.TestScript@c285f4]" name="invalidlogin" duration-ms="10414" started-at="2017-11-01T12:01:54Z" finished-at="2017-11-01T12:02:04Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[.='Login']"}
   (Session info: chrome=61.0.3163.100)
   (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.02 seconds
+Command duration or timeout: 10.06 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'PC-GOODTIMES', ip: '192.168.43.176', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\GOODTI~1\AppData\Local\Temp\scoped_dir4776_1003}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: e0e23df2482dd9c55f517d061328898a
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\GOODTI~1\AppData\Local\Temp\scoped_dir3016_10675}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 2e8f9db3c02f627056ba1c0d9e1e7052
 *** Element info: {Using=xpath, value=//div[.='Login']}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[.='Login']"}
   (Session info: chrome=61.0.3163.100)
   (Driver info: chromedriver=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a),platform=Windows NT 6.1.7601 SP1 x86) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 10.02 seconds
+Command duration or timeout: 10.06 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'PC-GOODTIMES', ip: '192.168.43.176', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\GOODTI~1\AppData\Local\Temp\scoped_dir4776_1003}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: e0e23df2482dd9c55f517d061328898a
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\GOODTI~1\AppData\Local\Temp\scoped_dir3016_10675}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: 2e8f9db3c02f627056ba1c0d9e1e7052
 *** Element info: {Using=xpath, value=//div[.='Login']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -51,8 +51,8 @@ Session ID: e0e23df2482dd9c55f517d061328898a
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.click(Unknown Source)
-	at script.TestScript.invalidlogin(TestScript.java:23)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at script.TestScript.invalidlogin(TestScript.java:25)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -84,15 +84,15 @@ Session ID: e0e23df2482dd9c55f517d061328898a
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invalidlogin -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:script.TestScript@167c1fc]" name="postCondition" is-config="true" duration-ms="90" started-at="2017-10-31T14:21:30Z" finished-at="2017-10-31T14:21:30Z">
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:script.TestScript@c285f4]" name="postCondition" is-config="true" duration-ms="2069" started-at="2017-11-01T12:02:05Z" finished-at="2017-11-01T12:02:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->
-        <test-method status="PASS" signature="preCondition()[pri:0, instance:script.TestScript@167c1fc]" name="preCondition" is-config="true" duration-ms="17509" started-at="2017-10-31T14:21:30Z" finished-at="2017-10-31T14:21:48Z">
+        <test-method status="PASS" signature="preCondition()[pri:0, instance:script.TestScript@c285f4]" name="preCondition" is-config="true" duration-ms="20533" started-at="2017-11-01T12:02:07Z" finished-at="2017-11-01T12:02:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method status="FAIL" signature="validLogin()[pri:0, instance:script.TestScript@167c1fc]" name="validLogin" duration-ms="10357" started-at="2017-10-31T14:21:48Z" finished-at="2017-10-31T14:21:58Z">
+        <test-method status="FAIL" signature="validLogin()[pri:0, instance:script.TestScript@c285f4]" name="validLogin" duration-ms="10387" started-at="2017-11-01T12:02:28Z" finished-at="2017-11-01T12:02:38Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[.='Login']"}
@@ -103,8 +103,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'PC-GOODTIMES', ip: '192.168.43.176', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\GOODTI~1\AppData\Local\Temp\scoped_dir4372_17968}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 6c6afdcef20e0e38cf81aad39b4ff392
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\GOODTI~1\AppData\Local\Temp\scoped_dir2052_2943}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: a3f494cba6948ac0cacc127f8a2b7733
 *** Element info: {Using=xpath, value=//div[.='Login']}]]>
             </message>
             <full-stacktrace>
@@ -116,8 +116,8 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'PC-GOODTIMES', ip: '192.168.43.176', os.name: 'Windows 7', os.arch: 'x86', os.version: '6.1', java.version: '1.8.0_144'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\GOODTI~1\AppData\Local\Temp\scoped_dir4372_17968}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
-Session ID: 6c6afdcef20e0e38cf81aad39b4ff392
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, networkConnectionEnabled=false, chrome={chromedriverVersion=2.32.498550 (9dec58e66c31bcc53a9ce3c7226f0c1c5810906a), userDataDir=C:\Users\GOODTI~1\AppData\Local\Temp\scoped_dir2052_2943}, takesHeapSnapshot=true, pageLoadStrategy=normal, databaseEnabled=false, handlesAlerts=true, hasTouchScreen=false, version=61.0.3163.100, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, locationContextEnabled=true, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=}]
+Session ID: a3f494cba6948ac0cacc127f8a2b7733
 *** Element info: {Using=xpath, value=//div[.='Login']}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
@@ -132,8 +132,8 @@ Session ID: 6c6afdcef20e0e38cf81aad39b4ff392
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:402)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy7.click(Unknown Source)
-	at script.TestScript.validLogin(TestScript.java:33)
+	at com.sun.proxy.$Proxy8.click(Unknown Source)
+	at script.TestScript.validLogin(TestScript.java:35)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -165,7 +165,7 @@ Session ID: 6c6afdcef20e0e38cf81aad39b4ff392
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validLogin -->
-        <test-method status="PASS" signature="postCondition()[pri:0, instance:script.TestScript@167c1fc]" name="postCondition" is-config="true" duration-ms="161" started-at="2017-10-31T14:21:58Z" finished-at="2017-10-31T14:21:58Z">
+        <test-method status="PASS" signature="postCondition()[pri:0, instance:script.TestScript@c285f4]" name="postCondition" is-config="true" duration-ms="2113" started-at="2017-11-01T12:02:38Z" finished-at="2017-11-01T12:02:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- postCondition -->

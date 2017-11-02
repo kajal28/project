@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="CommitDialog.authorValues">
+		<item value="Good Times &lt;Good Times@PC-GoodTimes&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="Good Times &lt;Good Times@PC-GoodTimes&gt;"/>
+	</list>
+	<section name="GitCommitMessageComponent">
+		<list key="C:\Users\Good Times\Desktop\kajal\.git">
+			<item value="empty"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item value="500,500" key="STAGING_SASH_FORM_WEIGHT"/>
+		<item value="true" key="sortItemState"/>
+		<item value="500,500" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
+	</section>
+</section>

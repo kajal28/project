@@ -25,4 +25,8 @@
 <fullyQualifiedTypeName name="org.openqa.selenium.firefox.FirefoxProfile"/>
 <fullyQualifiedTypeName name="org.openqa.selenium.chrome.ChromeDriver"/>
 <fullyQualifiedTypeName name="java.lang.Thread"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Listeners"/>
+<fullyQualifiedTypeName name="generic.Listener"/>
+<fullyQualifiedTypeName name="org.testng.annotations.Test"/>
+<fullyQualifiedTypeName name="org.testng.Reporter"/>
 </qualifiedTypeNameHistroy>

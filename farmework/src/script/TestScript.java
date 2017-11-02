@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.apache.poi.EncryptedDocumentException;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import generic.BasePage;
@@ -11,6 +12,7 @@ import generic.BaseTest;
 import generic.Excel;
 import pom.LoginPage;
 
+@Listeners(generic.Listener.class)
 public class TestScript extends BaseTest
 {
 	public LoginPage l;
