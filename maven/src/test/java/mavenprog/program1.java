@@ -8,7 +8,9 @@ public class program1
 	@Test
 	public void m1()
 	{
-		Reporter.log("hello");
+		Reporter.log("hellos" , true);
+		
+		
 	}
 	
 	
