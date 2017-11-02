@@ -5974,3 +5974,97 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2017-11-02 14:13:14.205
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.egit.core 4 0 2017-11-02 14:20:33.539
+!MESSAGE An exception occurred during push on URI https://github.com/kajal28/project.git: https://github.com/kajal28/project.git: Packing cancelled during objects writing
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/kajal28/project.git: Packing cancelled during objects writing
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:172)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:217)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:77)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:48)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/kajal28/project.git: Packing cancelled during objects writing
+	at org.eclipse.jgit.transport.BasePackPushConnection.doPush(BasePackPushConnection.java:236)
+	at org.eclipse.jgit.transport.TransportHttp$SmartHttpPushConnection.doPush(TransportHttp.java:870)
+	at org.eclipse.jgit.transport.BasePackPushConnection.push(BasePackPushConnection.java:168)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:172)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1275)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:161)
+	... 4 more
+Caused by: java.io.IOException: Packing cancelled during objects writing
+	at org.eclipse.jgit.internal.storage.pack.PackOutputStream.write(PackOutputStream.java:121)
+	at java.util.zip.DeflaterOutputStream.deflate(Unknown Source)
+	at java.util.zip.DeflaterOutputStream.write(Unknown Source)
+	at java.io.FilterOutputStream.write(Unknown Source)
+	at org.eclipse.jgit.lib.ObjectLoader.copyTo(ObjectLoader.java:266)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeWholeObjectDeflate(PackWriter.java:1577)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeObjectImpl(PackWriter.java:1555)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeBase(PackWriter.java:1563)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeDeltaObjectDeflate(PackWriter.java:1583)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeObjectImpl(PackWriter.java:1553)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeObject(PackWriter.java:1498)
+	at org.eclipse.jgit.internal.storage.pack.PackOutputStream.writeObject(PackOutputStream.java:164)
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.writeObjects(WindowCursor.java:209)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeObjects(PackWriter.java:1486)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeObjects(PackWriter.java:1474)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writePack(PackWriter.java:1038)
+	at org.eclipse.jgit.transport.BasePackPushConnection.writePack(BasePackPushConnection.java:359)
+	at org.eclipse.jgit.transport.BasePackPushConnection.doPush(BasePackPushConnection.java:216)
+	... 9 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2017-11-02 14:20:33.548
+!MESSAGE Can't connect to any repository: https://github.com/kajal28/project.git (https://github.com/kajal28/project.git: Packing cancelled during objects writing)
+
+!ENTRY org.eclipse.egit.core 4 0 2017-11-02 14:25:17.176
+!MESSAGE An exception occurred during push on URI https://github.com/kajal28/project.git: https://github.com/kajal28/project.git: Packing cancelled during objects writing
+!STACK 0
+org.eclipse.jgit.api.errors.TransportException: https://github.com/kajal28/project.git: Packing cancelled during objects writing
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:172)
+	at org.eclipse.egit.core.op.PushOperation.run(PushOperation.java:217)
+	at org.eclipse.egit.ui.internal.push.PushJob.performJob(PushJob.java:77)
+	at org.eclipse.egit.ui.internal.jobs.RepositoryJob.run(RepositoryJob.java:48)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.jgit.errors.TransportException: https://github.com/kajal28/project.git: Packing cancelled during objects writing
+	at org.eclipse.jgit.transport.BasePackPushConnection.doPush(BasePackPushConnection.java:236)
+	at org.eclipse.jgit.transport.TransportHttp$SmartHttpPushConnection.doPush(TransportHttp.java:870)
+	at org.eclipse.jgit.transport.BasePackPushConnection.push(BasePackPushConnection.java:168)
+	at org.eclipse.jgit.transport.PushProcess.execute(PushProcess.java:172)
+	at org.eclipse.jgit.transport.Transport.push(Transport.java:1275)
+	at org.eclipse.jgit.api.PushCommand.call(PushCommand.java:161)
+	... 4 more
+Caused by: java.io.IOException: Packing cancelled during objects writing
+	at org.eclipse.jgit.internal.storage.pack.PackOutputStream.write(PackOutputStream.java:121)
+	at java.util.zip.DeflaterOutputStream.deflate(Unknown Source)
+	at java.util.zip.DeflaterOutputStream.write(Unknown Source)
+	at java.io.FilterOutputStream.write(Unknown Source)
+	at org.eclipse.jgit.lib.ObjectLoader.copyTo(ObjectLoader.java:266)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeWholeObjectDeflate(PackWriter.java:1577)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeObjectImpl(PackWriter.java:1555)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeBase(PackWriter.java:1563)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeDeltaObjectDeflate(PackWriter.java:1583)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeObjectImpl(PackWriter.java:1553)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeObject(PackWriter.java:1498)
+	at org.eclipse.jgit.internal.storage.pack.PackOutputStream.writeObject(PackOutputStream.java:164)
+	at org.eclipse.jgit.internal.storage.file.WindowCursor.writeObjects(WindowCursor.java:209)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeObjects(PackWriter.java:1486)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writeObjects(PackWriter.java:1474)
+	at org.eclipse.jgit.internal.storage.pack.PackWriter.writePack(PackWriter.java:1038)
+	at org.eclipse.jgit.transport.BasePackPushConnection.writePack(BasePackPushConnection.java:359)
+	at org.eclipse.jgit.transport.BasePackPushConnection.doPush(BasePackPushConnection.java:216)
+	... 9 more
+
+!ENTRY org.eclipse.egit.ui 4 0 2017-11-02 14:25:17.180
+!MESSAGE Can't connect to any repository: https://github.com/kajal28/project.git (https://github.com/kajal28/project.git: Packing cancelled during objects writing)
+
+!ENTRY org.eclipse.egit.ui 4 0 2017-11-02 14:30:59.307
+!MESSAGE The process cannot access the file because another process has locked a portion of the file
+!STACK 0
+java.io.IOException: The process cannot access the file because another process has locked a portion of the file
+	at java.io.FileInputStream.readBytes(Native Method)
+	at java.io.FileInputStream.read(Unknown Source)
+	at org.eclipse.jgit.util.IO.readFully(IO.java:303)
+	at org.eclipse.jgit.internal.storage.file.ObjectDirectoryInserter.insert(ObjectDirectoryInserter.java:103)
+	at org.eclipse.jgit.api.AddCommand.call(AddCommand.java:233)
+	at org.eclipse.egit.ui.internal.staging.StagingView$48.run(StagingView.java:3119)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
